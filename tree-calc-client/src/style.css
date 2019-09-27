@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700');
 
 
-.text {
+* {
 font-family: Roboto;
-color: blue;
 }
 
 .stack-logo {
-  width: 30%;
-  display: inline-block;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+
+}
+
+.stack-options{
+  display: flex;
+  align-self: center;
+  align-items: flex-end;
+}
+
+.logo {
+  height: 100%;
+}
+
+.navbar {
+  height: 6vh;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;   
+  flex-wrap: nowrap;
 }

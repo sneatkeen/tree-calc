@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import './style.css'
 import Layout, { LayoutColumn } from "@kiwicom/orbit-components/lib/Layout";
 import Navbar from './Navbar';
@@ -7,8 +6,8 @@ import Navbar from './Navbar';
 function App() {
   return (
     <div className="App">
-      <Layout type="Search">
         <Navbar/>
+      <Layout type="Search">
         <LayoutColumn>
           The left SideBar for filters
     </LayoutColumn>

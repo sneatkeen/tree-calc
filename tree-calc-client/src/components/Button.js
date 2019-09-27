@@ -6,8 +6,6 @@ export default class button extends Component {
   render() {
     return (
       <>
-              <Button iconRight={<ChevronRight />}>Continue to payment</Button>
-              <Button iconRight={<ChevronRight />}>Explore</Button>
 
       </>
     )
