@@ -1,11 +1,11 @@
 {
   "name": "tree-calc",
   "version": "1.0.0",
-  "description": "",
+  "description": "Server for tree-calc service",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,11 @@
   "homepage": "https://github.com/sneatkeen/tree-calc#readme",
   "dependencies": {
     "@koa/cors": "^3.0.0",
+    "axios": "^0.19.0",
+    "dotenv": "^8.1.0",
     "koa": "^2.8.1",
     "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
     "koa-router": "^7.4.0",
     "nodemon": "^1.19.2"
   },
