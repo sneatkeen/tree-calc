@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './style.css'
+import Layout, { LayoutColumn } from "@kiwicom/orbit-components/lib/Layout";
+import Navbar from './Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout type="Search">
+        <Navbar/>
+        <LayoutColumn>
+          The left SideBar for filters
+    </LayoutColumn>
+        <LayoutColumn>
+          The main section for displaying the results
+    </LayoutColumn>
+        <LayoutColumn>
+          The right SideBar for promotion
+    </LayoutColumn>
+      </Layout>
     </div>
   );
 }
