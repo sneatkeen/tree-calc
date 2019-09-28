@@ -1,9 +1,9 @@
 const Router = require('koa-router');
 
-const apiService = require('./apiService');
+const apiService = require('../service/apiService');
 const handleServerError = require('./handleServerError');
 const handleBadRequest = require('./handleBadRequest');
-const appendTreeCalc = require('./appendTreeCalc');
+const appendTreeCtl = require('./appendTreeCtl');
 
 const router = new Router();
 
@@ -19,9 +19,8 @@ router.post('/search', async (ctx, next) => {
 
     const apiResponse = await apiService(ctx.request.body);
     if (apiResponse.status !== 200) return handleServerError(apiResponse.data, ctx, next);
-    console.log(apiResponse.data);
     
-    ctx.body = appendTreeCalc(apiResponse.data);
+    ctx.body = await appendTreeCtl(apiResponse.data);
     ctx.status = 200;
   } catch (err) {
     handleServerError(err, ctx, next);
