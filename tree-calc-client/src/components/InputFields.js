@@ -7,22 +7,38 @@ import InputField from "@kiwicom/orbit-components/lib/InputField";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+import SearchRequest from '../model/searchRequest';
+import httpService from '../services/httpService';
+
 
 export default class InputFields extends Component {
+  apiPath = 'http://localhost:3003/search';
+
+  initFetch = (method, body) => {
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    return {
+      headers,
+      method,
+      mode: 'cors',
+      body: JSON.stringify(body),
+    };
+  }
+
   constructor() {
     super();
     this.state = {
-      airportName1: '',
-      airportName2: '',
-      date1: new Date(),
-      date2: new Date()
+      cityFrom: '',
+      cityTo: '',
+      depDate: '',
+      depDateObj: new Date(),
+      returnDate: '',
+      returnDateObj: new Date(),
     }
     console.log('stateThing', this.state);
   }
 
   handleChangePorts = (event) => {
-    // AirportInput("from");
-    // AirportInput("to");
     const { name, value } = event.target;
     this.setState({ [name]: value });
     console.log('the state: ',this.state);
@@ -30,32 +46,26 @@ export default class InputFields extends Component {
 
   handleChange = date => {
     this.setState({
-      date1: date,
-      date2: date
+      depDate: `${date.getDate().toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`,
+      returnDate: `${date.getDate().toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`
     });
     console.log('the state: ', this.state);
 
   };
 
-  // handleSubmit = (event) => {
-  //   event.preventDefault();
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    const {
+      cityFrom,
+      cityTo,
+      depDate,
+      returnDate,
+    } = this.state;
+
+    const flights = await httpService(this.apiPath, this.initFetch('post', new SearchRequest({ cityFrom, cityTo, depDate, returnDate })));
+    console.log(flights);
     
-  //   // const  {player1Score , player2Score,player1Id,player2Id, tournament} = this.state;
-  //   // console.log('sendind: ',player1Score,player2Score,player1Id,player2Id,tournament);
-
-  //   // calls.modifyPlayer(player1Score,player1Id)
-  //   // .then((updatedScores) => {
-  //   //   console.log('updatedScores', updatedScores);
-  //   //   this.setState({ player1Score: 0 });
-  //   });
-
-
-    // calls.modifyPlayer(player2Score,player2Id)
-    // .then((updatedScores) => {
-    //   console.log('updatedScores', updatedScores);
-    //   this.setState({ player2Score: 0, redirect: true });
-    // })
-  // }
+  }
 
   render() {
     return (
@@ -65,8 +75,8 @@ export default class InputFields extends Component {
         <InputField
           size="small"
           type="text"
-          name="airportName1"
-          value={this.state.airportName1}
+          name="cityFrom"
+          value={this.state.cityFrom}
           label="From"
           required={true}
           onChange={this.handleChangePorts}
@@ -77,8 +87,8 @@ export default class InputFields extends Component {
         <InputField
           size="small"
           type="text"
-          name="airportName2"
-          value={this.state.airportName2}
+          name="cityTo"
+          value={this.state.cityTo}
           label="To"
           required={true}
           onChange={this.handleChangePorts}
@@ -87,14 +97,14 @@ export default class InputFields extends Component {
 
         <DatePicker
           className="date-field"
-          selected={this.state.date1}
+          selected={this.state.depDateObj}
           onChange={this.handleChange}
 
         />
 
         <DatePicker
           className="date-field"
-          selected={this.state.date2}
+          selected={this.state.returnDateObj}
           onChange={this.handleChange}
 
         />
@@ -106,6 +116,7 @@ export default class InputFields extends Component {
           type="secondary"
           size="large"
           iconRight={<ChevronRight />}
+          onClick={this.handleSubmit}
         > Submit
       </ButtonLink>
 
