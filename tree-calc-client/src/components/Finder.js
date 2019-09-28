@@ -6,7 +6,7 @@ import ChevronDown from "@kiwicom/orbit-components/lib/icons/ChevronDown";
 import Passengers from "@kiwicom/orbit-components/lib/icons/Passengers";
 import InputFields from "./InputFields";
 
-export default function Finder() {
+export default function Finder({ writeToState }) {
   return (
     <>
       <Card>
@@ -81,7 +81,7 @@ export default function Finder() {
             columnGap="10px"
             element="div"
           >
-            <InputFields />
+            <InputFields writeToState={writeToState} />
           </Grid>
         </CardSection>
       </Card>

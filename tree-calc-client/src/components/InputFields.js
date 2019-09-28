@@ -25,8 +25,8 @@ export default class InputFields extends Component {
     };
   }
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       cityFrom: '',
       cityTo: '',
@@ -63,6 +63,7 @@ export default class InputFields extends Component {
     } = this.state;
 
     const flights = await httpService(this.apiPath, this.initFetch('post', new SearchRequest({ cityFrom, cityTo, depDate, returnDate })));
+    this.props.writeToState(flights);
     console.log(flights);
     
   }

@@ -7,28 +7,42 @@ import RightBar from './components/RightBar';
 import LeftBar from './components/LeftBar';
 import Results from './components/Results';
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Finder />
-      <Layout type="Search">
-        <LayoutColumn>
-          <LeftBar />
-          The leftbar thing
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      flights: [],
+    };
+  }
 
-        </LayoutColumn>
-        <LayoutColumn>
-          <Results />
-          The main section for displaying the results
-    </LayoutColumn>
-        <LayoutColumn>
-          <RightBar />
-          The right SideBar for promotion
-    </LayoutColumn>
-      </Layout>
-    </div>
-  );
+  writeToAppState = (flights) => {
+    this.setState({
+      flights,
+    });
+  }
+  render() {
+    return (
+      <div className="App">
+        <Navbar />
+        <Finder writeToState={this.writeToAppState} />
+        <Layout type="Search">
+          <LayoutColumn>
+            <LeftBar />
+            The leftbar thing
+
+          </LayoutColumn>
+          <LayoutColumn>
+            <Results />
+            The main section for displaying the results
+      </LayoutColumn>
+          <LayoutColumn>
+            <RightBar />
+            The right SideBar for promotion
+      </LayoutColumn>
+        </Layout>
+      </div>
+    );
+  }
 }
 
 export default App;
