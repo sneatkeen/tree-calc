@@ -1,0 +1,134 @@
+Model,Seats,Fuel burn (kg/km),Fuel per seat,Sector,Type
+Antonov An-148 ,89,4.23,5.95 L/100 km,400,Commuter
+Antonov An-158 ,99,4.34,5.47 L/100 km,400,Commuter
+ATR 42-500,48,1.26,3.15 L/100 km,560,Commuter
+ATR 72-500,70,1.42,2.53 L/100 km,350,Commuter
+Beechcraft 1900D ,19,1.00,6.57 L/100 km,560,Commuter
+Bombardier CRJ100,50,2.21,5.50 L/100 km,560,Commuter
+Bombardier CRJ200,50,2.18,5.43 L/100 km,560,Commuter
+Bombardier CRJ700,70,2.95,5.25 L/100 km,560,Commuter
+Bombardier CRJ900,88,3.47,4.91 L/100 km,560,Commuter
+Bombardier Dash 8 Q400,78,2.16,3.46 L/100 km,560,Commuter
+Dornier 228,19,0.94,6.22 L/100 km,560,Commuter
+Dornier 328,32,1.22,4.76 L/100 km,560,Commuter
+Embraer Brasilia,30,0.92,3.82 L/100 km,560,Commuter
+Embraer ERJ-135ER ,37,1.64,5.52 L/100 km,600,Commuter
+Embraer ERJ-145ER ,50,1.76,4.37 L/100 km,600,Commuter
+Saab 340,32,1.1 ,4.29 L/100 km,560,Commuter
+Saab 2000,50,1.75,4.39 L/100 km,560,Commuter
+Xian MA700,78,1.69,2.71 L/100 km,560,Commuter
+Airbus A319neo,144,3.37,2.92 L/100 km,1100,Regional
+Airbus A319neo,124,2.82,2.82 L/100 km,1220,Regional
+Airbus A320neo,154,2.79,2.25 L/100 km,1220,Regional
+Airbus A321neo,192,3.30,2.19 L/100 km,1220,Regional
+Antonov An-148,89,2.89,4.06 L/100 km,1267,Regional
+Antonov An-158,99,3,3.79 L/100 km,1267,Regional
+Boeing 737-300,126,3.49,3.46 L/100 km,939,Regional
+Boeing 737-600,110,3.16,3.59 L/100 km,930,Regional
+Boeing 737-700,126,3.21,3.19 L/100 km,930,Regional
+Boeing 737 MAX7,128,2.85,2.77 L/100 km,1220,Regional
+Boeing 737 MAX7,144,3.39,2.93 L/100 km,1100,Regional
+Boeing 737-800,162,3.59,2.77 L/100 km,930,Regional
+Boeing 737 MAX8,166,3.04,2.28 L/100 km,1220,Regional
+Boeing 737-900ER,180,3.83,2.66 L/100 km,930,Regional
+Boeing 737 MAX9,180,3.30,2.28 L/100 km,1220,Regional
+Boeing 757-200,200,4.68,2.91 L/100 km,930,Regional
+Boeing 757-300,243,5.19,2.66 L/100 km,930,Regional
+Bombardier CRJ100,50,1.87,4.68 L/100 km,1069,Regional
+Bombardier CRJ200,50,1.80,4.49 L/100 km,1070,Regional
+Bombardier CRJ700,70,2.45,4.36 L/100 km,1063,Regional
+Bombardier CRJ900,88,2.78,3.94 L/100 km,1061,Regional
+Bombardier CRJ1000,100,2.66,3.33 L/100 km,930,Regional
+Airbus A220100,115,2.8 ,3.07 L/100 km,1100,Regional
+Airbus A220300,140,3.10,2.75 L/100 km,1100,Regional
+Airbus A220-100,125,2.57,2.57 L/100 km,930,Regional
+Airbus A220-300,160,2.85,2.23 L/100 km,930,Regional
+Bombardier Dash 8Q400,82,1.83,2.79 L/100 km,1100,Regional
+Dornier 328,31,1.08,4.35 L/100 km,1100,Regional
+Embraer E-Jet E2-175,88,2.44,3.44 L/100 km,1100,Regional
+Embraer E-Jet E2-190,106,2.83,3.32 L/100 km,1100,Regional
+Embraer E-Jet E2-195,132,3.07,2.90 L/100 km,1100,Regional
+Embraer E-Jet-170,80,2.6 ,4.08 L/100 km,1122,Regional
+Embraer E-Jet-175,88,2.80,3.97 L/100 km,1120,Regional
+Embraer E-Jet-190,114,3.24,3.54 L/100 km,1124,Regional
+Embraer E-Jet-195,122,3.21,3.28 L/100 km,1124,Regional
+Embraer ERJ-135ER,37,1.44,4.86 L/100 km,1104,Regional
+Embraer ERJ-145ER,50,1.55,3.86 L/100 km,1107,Regional
+Pilatus PC-12,9,0.41,5.66 L/100 km,930,Regional
+Saab 340,31,0.95,3.83 L/100 km,930,Regional
+Saab 2000,50,1.54,3.85 L/100 km,930,Regional
+Sukhoi SSJ100,98,2.81,3.59 L/100 km,930,Regional
+Xian MA700,78,1.56,2.50 L/100 km,1200,Regional
+Airbus A319,124,2.93,2.95 L/100 km,1900,Short-haul
+Airbus A319Neo,136,2.4 ,1.93 L/100 km,1900,Short-haul
+Airbus A320,150,3.13,2.61 L/100 km,1900,Short-haul
+Airbus A321-200,180,3.61,2.50 L/100 km,1900,Short-haul
+Airbus A330-200,293,5.6 ,2.37 L/100 km,1900,Short-haul
+Antonov An-148(1190 nmi),89,2.75,3.86 L/100 km,1900,Short-haul
+Antonov An-158(1190 nmi),99,2.83,3.57 L/100 km,1900,Short-haul
+Boeing 737-600,110,2.77,3.15 L/100 km,1900,Short-haul
+Boeing 737-700,126,2.82,2.79 L/100 km,1900,Short-haul
+Boeing 737-700,128,2.8 ,2.71 L/100 km,1900,Short-haul
+Boeing 737 MAX-7,140,2.51,1.94 L/100 km,1900,Short-haul
+Boeing 737-800,162,3.17,2.44 L/100 km,1900,Short-haul
+Boeing 737-800,160,3.45,2.68 L/100 km,1900,Short-haul
+Boeing 737-800W,162,3.18,2.45 L/100 km,1900,Short-haul
+Boeing 737 MAX-8,162,2.71,2.04 L/100 km,1900,Short-haul
+Boeing 737-900ER,180,3.42,2.38 L/100 km,1900,Short-haul
+Boeing 737-900ERW,180,3.42,2.37 L/100 km,1900,Short-haul
+Boeing 737 MAX-9,180,2.91,2.02 L/100 km,1900,Short-haul
+Boeing 757-200,190,4.60,3.02 L/100 km,1900,Short-haul
+Boeing 757-200,200,4.16,2.59 L/100 km,1900,Short-haul
+Boeing 757-300,243,4.68,2.40 L/100 km,1900,Short-haul
+Airbus A220-100,125,2.28,2.28 L/100 km,1900,Short-haul
+Airbus A220-300,160,2.56,2.00 L/100 km,1900,Short-haul
+Airbus A220-300,135,2.30,1.85 L/100 km,1900,Short-haul
+Quest Kodiak,9,0.71,6.28 L/100 km,1900,Short-haul
+Airbus A320,150,2.91,2.43 L/100 km,3984,Medium-haul
+Airbus A321NeoLR,154,2.99,2.43 L/100 km,6300,Medium-haul
+Airbus A330-200,241,6,3.11 L/100 km,5600,Medium-haul
+Airbus A330-300,262,6.25,2.98 L/100 km,5600,Medium-haul
+Airbus A330neo-900,310,6,2.42 L/100 km,6200,Medium-haul
+Airbus A340-300,262,6.81,3.25 L/100 km,5600,Medium-haul
+Boeing 737 MAX-8,168,2.86,2.13 L/100 km,6300,Medium-haul
+Boeing 737 MAX-9,144,2.91,2.53 L/100 km,6300,Medium-haul
+Boeing 747-400,416,10.7,3.24 L/100 km,3984,Medium-haul
+Boeing 747-8,467,9.9 ,2.65 L/100 km,5600,Medium-haul
+Boeing 757-200W,158,3.79,3.00 L/100 km,6300,Medium-haul
+Boeing 767-200ER,181,4.83,3.34 L/100 km,5600,Medium-haul
+Boeing 767-200ER,193,5.01,3.25 L/100 km,6300,Medium-haul
+Boeing 767-200ER,224,4.93,2.75 L/100 km,5600,Medium-haul
+Boeing 767-300ER,218,5.38,3.09 L/100 km,3984,Medium-haul
+Boeing 767-300ER,218,5.39,3.09 L/100 km,5600,Medium-haul
+Boeing 767-300ER,269,5.51,2.56 L/100 km,5600,Medium-haul
+Boeing 767-400ER,245,5.78,2.95 L/100 km,5600,Medium-haul
+Boeing 767-400ER,304,5.93,2.44 L/100 km,5600,Medium-haul
+Boeing 767-400ER,304,5.92,2.43 L/100 km,6047,Medium-haul
+Boeing 777-200,305,6.83,2.80 L/100 km,5600,Medium-haul
+Boeing 777-200ER,301,6.96,2.89 L/100 km,5600,Medium-haul
+Boeing 777-300,368,7.88,2.68 L/100 km,5600,Medium-haul
+Boeing 787-8,291,5.26,2.26 L/100 km,6300,Medium-haul
+Boeing 787-8,238,5.11,2.68 L/100 km,6300,Medium-haul
+Boeing 787-9,304,5.77,2.37 L/100 km,6200,Medium-haul
+Irkut MC-21,163,3.04,2.33 L/100 km,3240,Medium-haul
+Airbus A330-200,241,6.4 ,3.32 L/100 km,11000,Long-haul
+Airbus A330neo-800,248,5.45,2.75 L/100 km,8610,Long-haul
+Airbus A330neo-900,300,5.94,2.48 L/100 km,8610,Long-haul
+Airbus A340-300,262,7.32,3.49 L/100 km,11000,Long-haul
+Airbus A350-900,315,6.03,2.39 L/100 km,9208,Long-haul
+Airbus A350-900,315,7.07,2.81 L/100 km,12116,Long-haul
+Airbus A380,525,13.7,3.27 L/100 km,13300,Long-haul
+Airbus A380,544,13.7,3.16 L/100 km,11000,Long-haul
+Boeing 747-400,416,11.1,3.34 L/100 km,11000,Long-haul
+Boeing 747-8,467,10.5,2.82 L/100 km,11000,Long-haul
+Boeing 747-8,405,10.9,3.35 L/100 km,13300,Long-haul
+Boeing 777-200ER,301,7.42,3.08 L/100 km,11000,Long-haul
+Boeing 777-200ER,301,7.44,3.09 L/100 km,11000,Long-haul
+Boeing 777-200LR,291,7.57,3.25 L/100 km,9208,Long-haul
+Boeing 777-300ER,365,8.49,2.91 L/100 km,11000,Long-haul
+Boeing 777-300ER,344,8.58,3.11 L/100 km,13300,Long-haul
+Boeing 777-9X,395,9.04,2.85 L/100 km,13300,Long-haul
+Boeing 787-8,243,5.38,2.77 L/100 km,8610,Long-haul
+Boeing 787-9,294,5.85,2.49 L/100 km,8610,Long-haul
+Boeing 787-9,304,5.63,2.31 L/100 km,9208,Long-haul
+Boeing 787-9,291,7.18,3.08 L/100 km,12116,Long-haul
