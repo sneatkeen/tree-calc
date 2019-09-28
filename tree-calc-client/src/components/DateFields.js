@@ -1,13 +1,43 @@
 import React, { Component } from 'react'
-import DayPickerInput from 'react-day-picker/DayPickerInput';
-import 'react-day-picker/lib/style.css';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export default class DateFields extends Component {
+  constructor() {
+    super();
+    this.state = {
+      date1: new Date(),
+      date2: new Date()
+    }
+    console.log('stateThing', this.state);
+  }
+
+  handleChange = date => {
+    this.setState({
+      date1: date,
+      date2: date
+    });
+    console.log('the state: ', this.state);
+
+  };
+
+
   render() {
     return (
       <>
-      <DayPickerInput onDayChange={day => console.log(day)} />
-      <DayPickerInput onDayChange={day => console.log(day)} />
+        <DatePicker
+          className="date-field"
+          selected={this.state.date1}
+          onChange={this.handleChange}
+
+        />
+
+        <DatePicker
+          className="date-field"
+          selected={this.state.date2}
+          onChange={this.handleChange}
+
+        />
       </>
     )
   }
