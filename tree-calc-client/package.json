@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/polyfill": "^7.6.0",
     "@kiwicom/orbit-components": "^0.61.2",
     "@kiwicom/orbit-design-tokens": "^0.6.6",
+    "airport-autocomplete-js": "^2.1.1",
     "dotenv": "^8.1.0",
     "nodemon": "^1.19.2",
     "react": "^16.9.0",
+    "react-day-picker": "^7.3.2",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.2",
     "styled-components": "^5.0.0-beta.9"

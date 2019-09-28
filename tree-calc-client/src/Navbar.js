@@ -11,3 +11,10 @@ export default function Navbar() {
     </div>
   )
 }
+
+    /* <Card>
+      <CardSectionHeader>
+        <StackLogo />
+        <StackOptions />
+      </CardSectionHeader>
+    </Card> */
