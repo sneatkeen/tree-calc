@@ -56,7 +56,8 @@ class Index extends React.Component {
             <Content maxwidth="1024px" breakAt="768px" contentAlign="start" contentJustify="space-evenly" contentDirection="row">
               <div className="formBlob">
                 <div className="input-row">
-                  <select>
+                  <label htmlFor="cabin-select">Cabin</label>
+                  <select id="cabin-select">
                     <option value="eco">Economy</option>
                     <option value="business">Business</option>
                   </select>
@@ -119,8 +120,34 @@ class Index extends React.Component {
               background: white;
               border-radius: 6px;
               box-shadow: 0 4px 8px -4px #0002;
-              padding: 1em;
+              padding: 2em;
               margin-bottom: 1.5em;
+            }
+            .input-row {
+              margin-bottom: .65em;
+            }
+            label {
+              display: block;
+              font-size: 10px;
+              text-transform: uppercase;
+              font-weight: 600;
+              color: var(--accent-color);
+              padding-left: .65em;
+              margin-bottom: -.15em;
+            }
+            select {
+              border: none;
+              outline: none;
+              background: transparent;
+              font-weight: 600;
+            }
+            input[type="text"] {
+              border: 1px solid #bbf;
+              font-size: inherit;
+              padding: 8px;
+              width: 100%;
+              border-radius: 6px;
+
             }
           `}
         </style>

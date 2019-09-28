@@ -1,6 +1,6 @@
 import pandas as pd
 
-iata = pd.read_csv("Kiwi\\iata_airport_list.txt")
+iata = pd.read_csv(".\iata_airport_list.txt")
 iata.head()
 #pre-process and clean to keep just the city and code
 new = iata['city_code^city_name^state_code^country_code^tz_code^stv^por_code^por_name^loc_id^loc_type'].str.split("^",2,expand = True)

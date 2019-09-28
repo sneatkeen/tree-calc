@@ -2,7 +2,7 @@ import pandas as pd
 from math import sin, cos, sqrt, atan2, radians
 
 
-airport_df = pd.read_csv("C:\\Users\\user\\Kiwi\\airport-codes.csv")
+airport_df = pd.read_csv("./airport-codes.csv")
 #pre-process and clean to keep just the city and code
 airport_df = airport_df[['type','name','iso_country','municipality','iata_code','coordinates']]
 airport_df = airport_df.dropna(axis=0, subset=['iata_code'])
