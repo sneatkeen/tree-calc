@@ -73,10 +73,9 @@ class Index extends React.Component {
               </div>
               <div className="formBlob">
                 <div className="input-row">
-                  <input type="radio" name="gender" value="male" />
-                  Return
-                  <input type="radio" name="gender" value="female" />
-                  One-way
+                  <label>Choose trip type</label>
+                  <input type="radio" value="return" id="return" selected /><span className="radio-label">One-way</span>
+                  <input type="radio" value="one-way" id="one-way" /><span className="radio-label">Return</span>
                 </div>
                 <div className="input-row">
                   <label htmlFor="dateFrom">Departure</label>
@@ -147,7 +146,11 @@ class Index extends React.Component {
               padding: 8px;
               width: 100%;
               border-radius: 6px;
-
+            }
+            .radio-label {
+              display: inline;
+              text-transform: none;
+              color: var(--black);
             }
           `}
         </style>
