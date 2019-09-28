@@ -7,7 +7,7 @@ const apiUrl = process.env.TEQUILA_END_POINT;
 
 module.exports = async (req) => {
   let query = `apikey=${apiKey}`;
-  
+
   Object.keys(req).forEach((key) => {
     if (req[key]) query += `&${camelToUnderscore(key)}=${req[key]}`
   });

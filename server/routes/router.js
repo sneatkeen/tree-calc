@@ -19,8 +19,8 @@ router.post('/search', async (ctx, next) => {
 
     const apiResponse = await apiService(ctx.request.body);
     if (apiResponse.status !== 200) return handleServerError(apiResponse.data, ctx, next);
-    
-    ctx.body = await appendTreeCtl(apiResponse.data);
+  
+    ctx.body = apiResponse.data;
     ctx.status = 200;
   } catch (err) {
     handleServerError(err, ctx, next);
