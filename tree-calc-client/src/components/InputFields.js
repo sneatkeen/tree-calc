@@ -10,8 +10,9 @@ export default function InputFields() {
     <>
       <PortFields />
       <DateFields />
-      {/* submit field */}
+
       <ButtonLink
+        title="input-submit"
         disabled={false}
         block={false}
         type="secondary"

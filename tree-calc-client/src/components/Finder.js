@@ -1,7 +1,6 @@
 import React from 'react'
-import Card, { CardSectionHeader } from "@kiwicom/orbit-components/lib/Card";
-// import Select from "@kiwicom/orbit-components/lib/Select";
-// import Text from "@kiwicom/orbit-components/lib/Text";
+import Card, { CardSection } from "@kiwicom/orbit-components/lib/Card";
+import Grid from "@kiwicom/orbit-components/lib/utils/Grid";
 import ButtonLink from "@kiwicom/orbit-components/lib/ButtonLink";
 import ChevronDown from "@kiwicom/orbit-components/lib/icons/ChevronDown";
 import Passengers from "@kiwicom/orbit-components/lib/icons/Passengers";
@@ -9,10 +8,10 @@ import InputFields from "./InputFields";
 
 export default function Finder() {
   return (
-
-    <Card>
-      <CardSectionHeader>
-        {/* <Select
+    <>
+      <Card>
+        <CardSection>
+          {/* <Select
           id="select-id"
           required={false}
           placeholder="Select value from list"
@@ -33,58 +32,59 @@ export default function Finder() {
           spaceAfter={null}
         /> */}
 
-        <ButtonLink
-          disabled={false}
-          block={false}
-          type="secondary"
-          size="large"
-          href=""
-
-          iconRight={<ChevronDown />}
-          width={0}
-
-        > Return
+          <ButtonLink
+            title="return-mode"
+            disabled={false}
+            block={false}
+            type="secondary"
+            size="large"
+            href=""
+            iconRight={<ChevronDown />}
+            width={0}
+          > Return
       </ButtonLink>
-        <ButtonLink
-          disabled={false}
-          block={false}
-          type="secondary"
-          size="large"
-          href=""
-          dataTest="test"
-          iconRight={<ChevronDown />}
-          width={0}
-          external={false}
-          transparent={false}
-          submit={false}
-          ariaExpanded={false}
-          ariaControls="element ID"
-          spaceAfter={null}
-        > Economy
-      </ButtonLink>
-        <ButtonLink
-          disabled={false}
-          block={false}
-          type="secondary"
-          size="large"
-          href=""
-          dataTest="test"
-          iconLeft={<Passengers />}
-          iconRight={<ChevronDown />}
-          width={0}
-          external={false}
-          transparent={false}
-          submit={false}
-          ariaExpanded={false}
-          ariaControls="element ID"
-          spaceAfter={null}
-        > 1 Adult
-      </ButtonLink>
-      </CardSectionHeader>
-      <CardSectionHeader>
-        <InputFields />
-      </CardSectionHeader>
-    </Card>
 
+          <ButtonLink
+            title="flight-mode"
+            disabled={false}
+            block={false}
+            type="secondary"
+            size="large"
+            href=""
+            dataTest="test"
+            iconRight={<ChevronDown />}
+            width={0}
+            external={false}
+            transparent={false}
+            submit={false}
+            ariaExpanded={false}
+            ariaControls="element ID"
+            spaceAfter={null}
+          > Economy
+      </ButtonLink>
+
+          <ButtonLink
+            title="passenger-mode"
+            type="secondary"
+            size="large"
+            iconLeft={<Passengers />}
+            iconRight={<ChevronDown />}
+          > 1 Adult
+      </ButtonLink>
+
+        </CardSection>
+        <CardSection>
+          <Grid
+            inline={true}
+            columns="repeat(5,5fr)"
+            rows="1"
+            columnGap="10px"
+            element="div"
+          >
+            <InputFields />
+          </Grid>
+        </CardSection>
+      </Card>
+    </>
   )
 }

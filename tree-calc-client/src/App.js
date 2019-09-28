@@ -15,6 +15,8 @@ function App() {
       <Layout type="Search">
         <LayoutColumn>
           <LeftBar />
+          The leftbar thing
+
         </LayoutColumn>
         <LayoutColumn>
           <Results />

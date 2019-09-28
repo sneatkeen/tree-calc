@@ -11,6 +11,7 @@ export default function StackLogo() {
     <div className="stack-logo">
       <img className="logo" src={logo} alt='logo'></img>
       <ButtonLink
+        title="input-header-plane"
         disabled={false}
         block={false}
         type="secondary"
